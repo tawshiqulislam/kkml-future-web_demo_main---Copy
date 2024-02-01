@@ -227,8 +227,6 @@
                                                 <strong class="ml-3">{{ $flash_deal_product->discount }}%</strong>
                                             @elseif($detailedProduct->discount_type == 'percent')
                                                 <strong class="ml-3">{{ $detailedProduct->discount }}%</strong>
-                                            @else
-                                                <strong class="ml-3 text-danger">{{ format_price($detailedProduct->discount) }} <span class="h4 text-success">OFF</span></strong>
                                             @endif
                                         </div>
                                     </div>
