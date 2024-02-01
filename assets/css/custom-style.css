@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import "../../assets/fonts/stylesheet.css";
+/* common styles */
+.w__25 {
+    width: 25%;
+}
+
+@font-face {
+    font-family: "SolaimanLipi";
+    src: url("../../assets/fonts/SolaimanLipiNormal.eot");
+    src: url("../../assets/fonts/SolaimanLipiNormal.eot?#iefix")
+            format("embedded-opentype"),
+        url("../../assets/fonts/SolaimanLipiNormal.woff2") format("woff2"),
+        url("../../assets/fonts/SolaimanLipiNormal.woff") format("woff"),
+        url("../../assets/fonts/SolaimanLipiNormal.ttf") format("truetype");
+}
+
+body {
+    font-family: "SolaimanLipi", "Open Sans", sans-serif !important;
+    font-weight: 400;
+    font-kerning: normal;
+}
+
+/* Start Gutter override */
+/* .gutters-10 {
+margin-top: -20px;
+}
+.gutters-10 .col {
+margin-top: 20px;
+} */
+/* End Gutter override */
+/* end common styles */
+
+.custom-top-color {
+    background-color: #dff0fc;
+}
+
+.custom-top-color-2 {
+    background-color: #b5d9f3;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .dropdown:hover,
+.dropdown:focus-within {
+background-color: #fdae1ccc;
+} */
+.dropdown:hover a i {
+    opacity: 1 !important;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+/* Additional styling for your dropdown menu items */
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Optional: Add a smooth transition effect */
+.dropdown-menu {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+}
+
+/* .hero__banner {
+max-height: 300px;
+}
+.hero__banner img {
+height: 100%;
+object-fit: cover;
+} */
+
+.dropdown-menu-left {
+    left: auto !important;
+    right: 0;
+}
+
+.dropdown-menu-xs li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu-xs li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+.dropdown-menu-xs li a {
+    transition: 0.3s ease-in-out;
+}
+
+.dropdown-menu-xs li a:hover {
+    opacity: 1 !important;
+}
+
+/* Start: Logo Styles */
+.nav-logo a {
+    height: 70px;
+    margin: 15px 0;
+}
+
+.nav-logo a img {
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+
+/* End: Logo Styles */
+
+/* homepage category box */
+.kkml-cat {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.kkml-cat a {
+    display: flex;
+    flex-direction: column;
+}
+
+.kkml-cat__img {
+    height: 130px;
+    overflow: hidden;
+}
+
+.kkml-cat__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.kkml-cat p {
+    margin-bottom: 0;
+    padding: 10px 0;
+    color: #333;
+}
+
+.kkml-cat a {
+    display: block;
+}
+
+.kkml-cat a:hover .kkml-cat__img img {
+    transform: scale(1.05);
+}
+
+.kkml-cat:hover p {
+    color: #005cbf;
+}
+
+/* End homepage category box */
+
+/* Start: Todays Deal */
+
+.kkml-hot-deal-bg {
+    background-image: url(../img/background_img_hot_deal.jpg);
+    background-size: cover;
+}
+
+.kkml-deal .slick-slide {
+    margin: 0 10px;
+}
+
+.kkml-deal .slick-list {
+    margin: 0 -10px;
+}
+
+.kkml-deal__img {
+    max-height: 180px;
+    padding: 0 15px;
+    overflow: hidden;
+}
+/* .kkml-deal__img img {
+    mix-blend-mode: multiply;
+} */
+.kkml-deal__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kkml-deal__price p {
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+
+.kkml-deal__inner a {
+    background-color: #fff;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.kkml-deal__inner a:hover {
+    background-color: #dff0fc;
+    transform: scale(1.05);
+}
+
+/* End: Todays Deal */
+
+/* Start: Authos */
+.kkml-authors a {
+    display: block;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.kkml-authors p {
+    margin-top: 10px;
+}
+
+.kkml-authors__img {
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: 0.3s ease-in-out;
+    filter: drop-shadow(2px 3px 10px rgb(181, 217, 243, 0.2));
+}
+
+.kkml-authors__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 6px solid #b5d9f3;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.kkml-authors a:hover .kkml-authors__img {
+    filter: drop-shadow(7px 10px 10px rgb(181, 217, 243, 1));
+}
+
+/* End: Authos */
+
+/* Start: Home banner 1 */
+.kkml-banner {
+    width: 100%;
+}
+
+.kkml-banner img {
+    width: 100%;
+}
+
+/* End: Home banner 1 */
+/* ------------------------------------ */
+.offer-badge {
+    background-color: #e40707;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fefefe;
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    font-weight: 700;
+}
+
+.kkml-card-hov-icon {
+    right: -4px;
+}
+
+/* Best Selling */
+.best-selling-image {
+    max-height: 250px;
+}
+.best-selling-image img {
+    object-fit: contain;
+    height: 100%;
+}
+
+/* Start: Product Details content */
+.product-details-content .MsoNormal span {
+    font-family: "SolaimanLipi" !important;
+}
+/* End: Product Details content */
+/* navbar  */
+
+.devider {
+    width: 1px;
+    height: 70%;
+    background: rgba(173, 173, 173, 0.5);
+}
+
+/* ___________________________Responsive______________________________________  */
+
+/* Responsive for badge */
+@media (max-width: 426px) {
+    .offer-badge {
+        top: 10px;
+        font-size: 9px;
+        left: 16px;
+    }
+}
+
+@media (max-width: 376px) {
+    .offer-badge {
+        top: 10px;
+        font-size: 9px;
+        left: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    .offer-badge {
+        top: 7px;
+        font-size: 8px;
+        left: 6px;
+    }
+}

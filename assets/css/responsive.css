@@ -1,0 +1,42 @@
+/* Mobile */
+@media screen and (max-width: 575.98px) {
+    .section-title .btn-primary,
+    .section-title .btn-soft-primary:hover,
+    .section-title .btn-outline-primary:hover {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        text-align: right;
+        text-decoration: underline;
+        color: #333;
+        font-weight: 700;
+    }
+    .aiz-carousel .slick-arrow {
+        width: 30px;
+        height: 30px;
+        line-height: 33px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile Landscape / Mini Tablet */
+@media screen and (max-width: 767.98px) {
+    .section-title .h5 {
+        font-size: 18px;
+    }
+    .kkml-authors a {
+        padding: 0;
+    }
+}
+
+/* Tablet / Small Notebook */
+@media screen and (max-width: 991.98px) {
+}
+
+/* Medium Desktop */
+@media screen and (max-width: 1199.98px) {
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px) {
+}
